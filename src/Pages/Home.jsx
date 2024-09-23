@@ -7,7 +7,6 @@ import Connecting_section4 from '../Component/Connecting_section4.jsx'
 import Sales5banner from '../Component/Sales5banner.jsx'
 import Review6 from '../Component/Review6.jsx'
 import Profit7 from '../Component/Profit7.jsx'
-import Footer from '../Component/Footer.jsx'
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
     <Sales5banner/>
     <Review6/>
     <Profit7/>
-    <Footer/>
+  
        </>
   )
 }

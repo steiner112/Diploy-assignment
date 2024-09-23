@@ -36,7 +36,7 @@ nav {
     list-style-type: none;
     color: rgba(0, 0, 0, 0.805);
 
-    li {
+   >li {
         display: flex;
         align-items: center;
         margin-right: 14px;
@@ -91,6 +91,16 @@ ul {
     }
 }
 
+.showme:hover .hideme{
+
+    display: block;
+}
+.hideme{
+    display: none;
+    li{
+        background-color: rgba(5, 17, 176, 0.726);
+    }
+}
 /* .... dropdown hover  */
 .Dropdown {
     position: absolute;
