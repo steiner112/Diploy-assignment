@@ -1,0 +1,136 @@
+#mi2 {
+    background-color: rgba(128, 128, 128, 0.081);
+}
+
+#outer22 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 464;
+    font-style: normal;
+}
+
+#first {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    h1 {
+        width: 34%;
+        font-size: 50px;
+        margin: 30px;
+    }
+
+    p {
+        color: rgba(0, 0, 0, 0.648);
+        margin: 40px;
+        width: 30%;
+        font-size: 16px;
+    }
+}
+
+#scrollSection {
+    width: 80%;
+    display: flex;
+    height: fit-content;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+}
+
+#scrollSection::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card122 {
+    position: relative;
+    background-color: white;
+    width: 450px;
+    min-width: 400px;
+    height: 300px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 20px 2px rgba(92, 91, 91, 0.237);
+    margin: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cardUpper{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+   >img{
+    border-radius: 100px;
+        width: 80px;
+        height: 80px;
+    }
+    .tee{
+        margin-left: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        h5{
+            margin-left: 5px; 
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.871);
+        }
+        p{
+            margin-left: 5px; 
+
+            font-size: 16px;
+            color: rgba(16, 184, 19, 0.689);
+        }
+        img{
+            width: 90px;
+        }
+    }
+
+}
+
+.cardLower{
+object-fit: contain;
+padding: 8px;
+p{
+    padding: 5px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.782);
+
+}
+}
+
+
+@media screen and (max-width : 1008px) {
+    #first{
+        flex-direction: column;
+
+        h1{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+        }
+    }
+
+    #scrollSection{
+        width: 95vw;
+    }
+    .card122{
+        min-width: 350px;
+    }
+  
+}

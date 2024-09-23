@@ -1,0 +1,123 @@
+#outtr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 464;
+    font-style: normal;
+    color: white;
+    height: 100%;
+}
+#text2221{
+    width: 50%;
+    background-color: rgb(33, 108, 228);
+    height: 74vh;
+    margin: 80px;
+    padding: 50px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.295);
+
+
+    border-radius: 30px;
+    h1{
+        margin: 10px;
+    }
+    p{
+        margin: 10px;
+    }
+
+
+    span{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 400px;
+    }
+
+    #moneyBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 430px;
+        height: 280px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.516);
+    }
+    #lineBox{
+        border-bottom: 2px solid;
+    }
+
+    
+}
+
+/* ............. img  */
+
+#imgMain{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 18%;
+    bottom:  11%;
+    width: 30vw;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.295);
+    backdrop-filter: blur(20px);
+
+    #tree{
+        min-width: 400px;
+    }
+}
+
+#btn221{
+    width: 120px;
+    padding: 7px;
+    margin: 20px;
+    background-color: white;
+    color: rgb(0, 136, 255);
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width :1300px) {
+    #text2221{
+        width: 80%;
+    }
+    #moneyBox{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width :1112px) {
+    #text2221{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #imgMain{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width : 600px) {
+    #moneyBox{
+        width: 300px;
+        span{
+            width: 300px;
+        }
+    }
+    #text2221{
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

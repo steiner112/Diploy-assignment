@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+#banner {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+
+    h1 {
+        font-size: 56px;
+        min-width: 180px;
+       
+        font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 464;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+        line-height: 50px;
+        letter-spacing: 1px;
+        font-style: normal;
+        color: rgba(1, 1, 26, 0.785);
+    }
+}
+
+/* media querry  */
+
+@media screen and (max-width: 1095px) {
+    #banner {
+        flex-direction: row;
+        margin-top: 110px;
+    }
+
+    #TextSectionLeft {
+        width: 100%;
+    }
+
+    #GifSectionRight {
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width : 900px) {
+    #banner h1{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #TextSectionLeft {
+        width: 100%;
+    }
+
+    #banner h1 {
+        font-size: 51px;
+    }
+
+    #banner {
+        align-items: start;
+    }
+
+    #BannerImage {
+        min-width: 450px;
+    }
+
+    #btnsectionInnerText {
+
+
+        button {
+            font-size: 8px;
+        }
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #banner h1{
+        font-size: 44px;
+    }
+    #banner {
+        flex-direction: row;
+        margin-top: 200px;
+    }
+
+}
+/* .... */
+
+#innerTextBOX {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 8px;
+
+    ul {
+        margin: 8px;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: rgba(28, 27, 27, 0.655);
+        font-style: normal;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 8px;
+            flex-direction: row;
+        }
+    }
+}
+
+
+#TextSectionLeft {
+    width: 50%;
+    min-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    animation: translateX 1s ease;
+
+    img {
+        width: 12px;
+        margin-right: 5px;
+    }
+
+    p {
+        
+        font-size: 16px;
+        margin: 8px;
+        color: rgba(41, 100, 211, 0.699);
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+#GifSectionRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    /* background-image: linear-gradient(270deg, #dbdbdb 0%, #ffffff 100%); */
+
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: opacity 0.5s ease;
+
+    }
+
+    img {
+        width: 500px;
+        animation: opacity 1s forwards;
+    }
+}
+
+
+/* ....  btn*/
+
+
+#btnsectionInnerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+   
+
+    button {
+        font-size: 16px;
+        min-width: 88px;
+        height: 56px;
+        object-fit: contain;
+        overflow: hidden;
+        padding: 0 16px;
+        margin-right: 8px;
+        border-radius: 1px;
+        transition: all 0.4s ease;
+
+        &:active {
+            transform: scale(0.9);
+        }
+
+
+
+    }
+
+    #StartBTN {
+        background: white;
+        outline: none;
+        border: 1px solid rgba(50, 48, 48, 0.581);
+
+        &:hover {
+            background-color: #ffffff;
+            color: #3050dfd4;
+            border: 1px solid #3050dfd4;
+
+        }
+    }
+
+    #HOWbtn {
+        background-color: #3050dfd4;
+        border: 1px solid #3050dfd4;
+        color: white;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #3050dfd4;
+        }
+    }
+
+}
+
+
+/* ....animation .................  */
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translateX {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    to {
+      
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

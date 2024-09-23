@@ -1,0 +1,70 @@
+#outerPart{
+    position: relative;
+    display: flex;
+    height: max-content;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 400px;
+        min-width: 400px;
+        height: 400px;
+        margin: 8px;
+        background-color: rgb(255, 255, 255);
+        font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 464;
+            font-style: normal;
+        img{
+            margin: 8px;
+            width: 160px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: fill;
+        }
+        h3{
+            margin: 8px;
+            
+        }
+        p{
+            margin: 8px;
+            color: rgba(0, 0, 0, 0.508);
+        }
+    }
+}
+
+
+#box1{
+    animation: banner1 forwards;
+    animation-timeline: view();
+    animation-range: entry 10%;
+}
+#box2{
+    animation: banner1 forwards;
+    animation-timeline: v();
+    animation-range: entry 90%;
+}
+#box3{
+    animation: banner1 forwards;
+    animation-timeline: view();
+    animation-range: entry 10%;
+}
+@keyframes banner1 {
+    from{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

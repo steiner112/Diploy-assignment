@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Rubik+Distressed&display=swap');
+header {
+    position: fixed;
+    margin-bottom: 10vh;
+    min-width: 450px;
+    width: 100%;
+    top: 0%;
+    height: 70px;
+    box-shadow: 0 3px 4px #0000000a;
+    z-index: 50;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    min-height: 70px;
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.805);
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-right: 14px;
+        font-size: 2vmin;
+        padding: 6px;
+        height: 71px;
+        transition: color 0.3s ease;
+
+        img {
+            position: relative;
+            width: 2vmin;
+            margin-left: 5px;
+            transform: rotateZ(0deg);
+        }
+
+        &:hover img {
+            transform: rotateZ(180deg);
+            transition: transform 0.3s ease;
+        }
+    }
+
+}
+
+#navbar>li:hover {
+    color: #3050dfd4;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+/* ................navbar all dropdowns................  */
+
+#dropDown-help,
+#dropDown-Usecase,
+#dropDown-Servies,
+#dropDown-HowItWorks {
+    position: relative;
+
+    ul {
+        display: none;
+        transition: all 0.3 ease;
+    }
+
+    &:hover ul {
+        display: inline-block;
+        opacity: 1;
+    }
+}
+
+/* .... dropdown hover  */
+.Dropdown {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease;
+    top: 100%;
+    width: fit-content;
+    padding: 12px 16px;
+    color: rgba(0, 0, 0, 0.805);
+    background-color: white;
+    min-width: 210px;
+    box-shadow: 0 0 2px #757c7e1a, 0 2px 3px #757c7e26, 0 1px 3px #757c7e40;
+
+    li {
+        padding: 6px;
+
+        &:hover {
+            color: #3050dfd4;
+        }
+    }
+
+}
+
+/* ......................MobileNavbar style starts from here ..............  */
+/*...........................................................................*/
+
+#LineBox{
+    position: absolute;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+
+    div{
+        transition: all 0.4s ease;
+        width: 4vmin;
+        min-width: 40px;
+        border: 2px solid black;
+        margin: 5px;
+        background-color: black;
+    }
+}
+
+.line1{
+    transform: rotateZ(45deg)translateY(15px);
+    opacity: 0.9;
+}
+.line2{
+   opacity: 0;
+}
+.line3{
+    transform: rotateZ(-45deg)translateY(-15px);
+    opacity: 0.9;
+}
+#mobileDropdown {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 100vh;
+    top: 100%;
+    left: 0%;
+    width: 99vw;
+    display: none; 
+    flex-direction: column;
+    transition: all 0.3s ease;
+    z-index: 100; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: slide 0.3s ease;
+
+    li {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+        border-bottom: rgba(0, 0, 0, 0.53) solid;
+        padding-bottom: 20px;
+    }
+        img {
+            position: relative;
+            width: 26px;
+            margin-left: 5px;
+            transform: rotateZ(0deg);
+        }
+
+        
+}
+
+ #n1:hover #downImgNavbar4{
+    transform: rotateZ(180deg);
+    transition: transform 0.3s ease;
+}
+
+
+#n2:hover #downImgNavbar5{
+    transform: rotateZ(180deg);
+    transition: transform 0.3s ease;
+}
+
+#n3:hover #downImgNavbar6{
+    transform: rotateZ(180deg);
+    transition: transform 0.3s ease;
+}
+
+#n4:hover #downImgNavbar7{
+    transform: rotateZ(180deg);
+    transition: transform 0.3s ease;
+}
+@keyframes slide {
+    from{
+        transform: translate(-300px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+/* To show the dropdown */
+
+
+
+
+
+/* ........................button login and sign up .................  */
+/* .................................................................... */
+
+#login_signUp_Box {
+    position: relative;
+    right: 10%;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 2vmin;
+
+    button {
+        position: relative;
+        transition: all 0.5s ease-out;
+        width: 80px;
+        margin-right: 10px;
+        padding: 8px;
+    }
+}
+
+#login {
+    background-color: white;
+    outline: none;
+    border: 1px solid rgba(42, 41, 41, 0.256);
+
+    &:hover {
+        color: #3050dfd4;
+    }
+}
+
+#sign-up {
+    background-color: #3050dfd4;
+    border: 1px solid #3050dfd4;
+    color: white;
+
+    &:hover {
+        color: #3050dfd4;
+        background-color: white;
+        border: 1px solid rgba(42, 41, 41, 0.256);
+    }
+}
+
+/* ....................logo img svg .............  */
+
+#Logo {
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: rgb(2, 44, 44);
+        /* font-family: "Trade Winds", system-ui;
+        font-weight: 300;
+        font-style: normal; */
+
+        /* font-family: "Rubik Distressed", system-ui;
+        font-weight: 400;
+        font-style: normal; */
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    img {
+        width: 50px;
+    }
+}
+
+
+
+/* media querry ..........  */
+@media screen and (max-width: 1288px) {
+    #login_signUp_Box{
+        right: 0%;
+    }
+    #Logo{
+        left: 0%;
+    }
+}
+@media screen and (max-width: 1124px) {
+    #login_signUp_Box{
+        position: absolute;
+        right:12%;
+    }
+    #Logo{
+     display: none;
+    }
+   #navbar{
+    display: none;
+   }
+}
+
+@media screen and (min-width: 1124px) {
+ #LineBox{
+    display: none;
+ }  
+}

@@ -1,0 +1,89 @@
+#MainBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.081);
+    >img{
+        width: 40px;
+        display: none;
+        margin: 20px;
+    }
+}
+
+#outBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    height: 50vh;
+    margin: 0px 0px 50px 0px;
+    padding: 10px;
+    padding-bottom: 50px;
+    border: none;
+
+    div{
+        width: 300px;
+        min-width: 300px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 464;
+        font-style: normal;
+
+        h6{
+            font-size: 16px;
+        }
+        h4{
+            font-size: 24px;
+        }
+        p{
+            padding-top: 16px;
+            font-size: 14px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    #outBox{
+        width: 320px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        object-fit: contain;
+    }
+
+    #outBox div{
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+    }
+
+    #outBox div:first-child{
+        margin-left: 800px;
+    }
+    #MainBox>img{
+        
+        display: block;
+    }
+
+    #left12{
+        position: absolute;
+        left: 0%;
+        top: 20%;
+
+    }
+    #right12{
+        position: absolute;
+        right: 0%;
+        top: 20%;
+    }
+}
