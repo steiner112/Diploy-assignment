@@ -22,7 +22,9 @@ export default function Connecting_section4() {
   return (
     <>
     <main>
-        <div id='boxx'  data-aos="slide-left">
+        <div id='boxx'  data-aos="slide-left"  data-aos-offset="200" 
+              data-aos-easing="ease-in-sine" 
+              data-aos-duration="600">
             <h1>Connect your store</h1>
             <p>Printify easily integrates with major e-commerce platforms and marketplacesd</p>
             <div id='inside'>

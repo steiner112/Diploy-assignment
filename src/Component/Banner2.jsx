@@ -19,7 +19,9 @@ export default function Banner2() {
     <>
       <main id='boxOuter'>
       {/* <div id='boxOuter'> */}
-        <div id='inBox' data-aos="zoom-in-left" >
+        <div id='inBox' data-aos="zoom-in-left"  data-aos-offset="200" 
+              data-aos-easing="ease-in-sine" 
+              data-aos-duration="600">
           <div id='imgSection' >
           <Lottie id='Banner2Image' animationData={BannerImage2} />
           </div>
