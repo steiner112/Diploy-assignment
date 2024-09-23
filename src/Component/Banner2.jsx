@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../ComponentCss/Banner2.css';
 import Lottie from "lottie-react";
 import BannerImage2 from '../assets/Map.json';
 import right from '../assets/right.svg';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
+
 
 export default function Banner2() {
+
+  
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
+
   return (
     <>
       <main id='boxOuter'>
       {/* <div id='boxOuter'> */}
-        <div id='inBox'>
-          <div id='imgSection'>
+        <div id='inBox' data-aos="zoom-in-left" >
+          <div id='imgSection' >
           <Lottie id='Banner2Image' animationData={BannerImage2} />
           </div>
           <div id='TextSection'>

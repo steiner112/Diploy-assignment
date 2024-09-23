@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../ComponentCss/Connecting_section4.css";
 import shopify from "../assets/shopify.png";
 import amazon from "../assets/amazon.png";
@@ -6,12 +6,23 @@ import netflix from "../assets/netflix.png";
 import twitch from "../assets/twitch.png";
 import dmd from "../assets/dmd.png";
 import wix from "../assets/wix.png";
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
+
+
+
 
 export default function Connecting_section4() {
+  
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
+
   return (
     <>
     <main>
-        <div id='boxx'>
+        <div id='boxx'  data-aos="slide-left">
             <h1>Connect your store</h1>
             <p>Printify easily integrates with major e-commerce platforms and marketplacesd</p>
             <div id='inside'>

@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../ComponentCss/Review6.css";
 import male from "../assets/male.jpg"
 import male2 from "../assets/male2.jpg"
 import female from "../assets/female.jpg"
 import female1 from "../assets/female1.jpg"
 import stars from "../assets/stars.jpg"
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
+
 
 
 export default function Review6() {
+
+    
+  useEffect(() => {
+    Aos.init({ duration: 700 });
+  }, []);
+
     return (
         <>
-            <main id='mi2'>
+            <main id='mi2' data-aos="zoom-in-up">
 
                 <div id='outer22'>
                     <div id='first'>

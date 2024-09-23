@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../ComponentCss/Profit7.css";
 import Lottie from 'lottie-react';
 import tree from "../assets/tree.json";
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 
 export default function Profit7() {
+    
+  useEffect(() => {
+    Aos.init({ duration: 700 });
+  }, []);
     return (
         <>
             <main>
                 <div id='outtr'>
-                    <div id='text2221'>
+                    <div id='text2221' data-aos="slide-right" >
                     <h1>Make Money, Risk-Free</h1>
                     <p>You pay for fulfillment only when you make a sale</p>
                     <div id='moneyBox'>
@@ -23,7 +29,7 @@ export default function Profit7() {
                     <p>100% Free to use · 900+ Products · Largest print network</p>
                     </div>
 
-                    <div id='imgMain'>
+                    <div id='imgMain' data-aos="slide-left">
                   <Lottie id="tree" animationData={tree} /> 
 
                     </div>

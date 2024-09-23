@@ -1,12 +1,22 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../ComponentCss/Slider3.css';
 import image1 from "../assets/custom.png";
 import image2 from "../assets/fulfillment.png";
 import image3 from "../assets/order.png";
 import right1 from "../assets/right-svgrepo-com.svg";
 import left1 from "../assets/left-svgrepo-com.svg";
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
+
 
 export default function Slider3() {
+
+  useEffect(() => {
+    Aos.init({ duration: 700 });
+  }, []);
+
+
   const outBoxRef = useRef(null);
 
   const scrollRight = () => {
@@ -23,7 +33,7 @@ export default function Slider3() {
 
   return (
     <>
-      <main id='MainBox'>
+      <main id='MainBox' data-aos="flip-down">
         <img id='left12' src={left1} alt="left" onClick={scrollLeft} className="arrow" />
         <div id='outBox' ref={outBoxRef}>
           <div>
