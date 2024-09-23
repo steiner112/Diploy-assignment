@@ -33,9 +33,9 @@ export default function Slider3() {
 
   return (
     <>
-      <main id='MainBox' data-aos="flip-down">
+      <main id='MainBox'>
         <img id='left12' src={left1} alt="left" onClick={scrollLeft} className="arrow" />
-        <div id='outBox' ref={outBoxRef}>
+        <div id='outBox' ref={outBoxRef} data-aos="flip-down" >
           <div>
             <img src={image1} alt="custom" />
             <h6>CREATE</h6>
